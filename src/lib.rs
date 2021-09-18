@@ -16,7 +16,7 @@ fn update(msg: Msg, _model: &mut Model, orders: &mut impl Orders<Msg>) {
 	}
 }
 fn view(_model: &Model) -> Vec<Node<Msg>> {
-    nodes!["Hello world !"]
+    nodes![div!["Hello world !"]]
 }
 
 #[wasm_bindgen(start)]
