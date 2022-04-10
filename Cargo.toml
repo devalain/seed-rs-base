@@ -3,7 +3,7 @@ name = "seed-rs-base"
 description = "Seed template for web developpment"
 version = "0.1.0"
 authors = ["alain"]
-edition = "2018"
+edition = "2021"
 
 # build with:
 # wasm-pack build --target web --release
@@ -15,7 +15,7 @@ crate-type = ["cdylib"]
 # wasm-bindgen-test = "0.3"
 
 [dependencies]
-seed = "0.8"
+seed = "0.9"
 
 [profile.release]
 lto = true
