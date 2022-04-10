@@ -1,7 +1,7 @@
-use seed::{*, prelude::*};
+use seed::{prelude::*, *};
 
 pub enum Msg {
-	NoMsg
+    NoMsg,
 }
 
 struct Model {}
@@ -12,8 +12,8 @@ fn init(_url: Url, _orders: &mut impl Orders<Msg>) -> Model {
 fn update(msg: Msg, _model: &mut Model, orders: &mut impl Orders<Msg>) {
     orders.skip();
     match msg {
-		Msg::NoMsg => {}
-	}
+        Msg::NoMsg => {}
+    }
 }
 fn view(_model: &Model) -> Vec<Node<Msg>> {
     nodes![div!["Hello world !"]]
